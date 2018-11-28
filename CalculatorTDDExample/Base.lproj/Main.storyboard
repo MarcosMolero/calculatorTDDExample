@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JML-Ep-woe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CalculatorTDD-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorTDDExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dividend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-gn-b8O">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c4a-PR-Uu7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65y-jV-stB">
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vEV-u0-nXm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njH-do-GHB">
+                                <rect key="frame" x="16" y="224" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Sy3-aE-UaZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVH-D2-FbD">
+                                <rect key="frame" x="16" y="110" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="dividendTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ci9-wX-1YC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jew-EU-SBv">
+                                <rect key="frame" x="16" y="186" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="dividerTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="h29-IP-Gii"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HK-oE-WzE">
+                                <rect key="frame" x="166" y="324" width="43" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="divideButton"/>
+                                <state key="normal" title="Divide"/>
+                                <connections>
+                                    <action selector="divideButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVw-wn-5Kc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6X-01-VK7">
+                                <rect key="frame" x="16" y="262" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="resultLabel"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="71w-Ea-UUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xVH-D2-FbD" firstAttribute="top" secondItem="Mma-gn-b8O" secondAttribute="bottom" constant="8" id="1ML-Pa-2id"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mma-gn-b8O" secondAttribute="trailing" constant="16" id="2Cf-pb-bUU"/>
+                            <constraint firstItem="njH-do-GHB" firstAttribute="top" secondItem="jew-EU-SBv" secondAttribute="bottom" constant="8" id="BQe-fC-3Al"/>
+                            <constraint firstItem="xVH-D2-FbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Er6-Dc-CfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="njH-do-GHB" secondAttribute="trailing" constant="16" id="ErI-EK-QHd"/>
+                            <constraint firstItem="q6X-01-VK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H4L-9j-3y3"/>
+                            <constraint firstItem="q6X-01-VK7" firstAttribute="top" secondItem="njH-do-GHB" secondAttribute="bottom" constant="8" id="JFv-zr-OUC"/>
+                            <constraint firstItem="jew-EU-SBv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="P5I-Jn-wJO"/>
+                            <constraint firstItem="jew-EU-SBv" firstAttribute="top" secondItem="65y-jV-stB" secondAttribute="bottom" constant="8" id="SIm-GC-Q1y"/>
+                            <constraint firstItem="65y-jV-stB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Yz7-46-BcI"/>
+                            <constraint firstItem="7HK-oE-WzE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eoW-8G-byb"/>
+                            <constraint firstItem="Mma-gn-b8O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="iEf-i2-B6V"/>
+                            <constraint firstItem="65y-jV-stB" firstAttribute="top" secondItem="xVH-D2-FbD" secondAttribute="bottom" constant="8" id="jcY-Ul-Vle"/>
+                            <constraint firstItem="7HK-oE-WzE" firstAttribute="top" secondItem="q6X-01-VK7" secondAttribute="bottom" constant="32" id="l8W-g8-c63"/>
+                            <constraint firstItem="Mma-gn-b8O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lJ7-MJ-bTC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="65y-jV-stB" secondAttribute="trailing" constant="16" id="rdp-me-fF0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xVH-D2-FbD" secondAttribute="trailing" constant="16" id="tTq-bY-xsF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q6X-01-VK7" secondAttribute="trailing" constant="16" id="uNS-Sh-G5h"/>
+                            <constraint firstItem="njH-do-GHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xJY-IG-SQi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jew-EU-SBv" secondAttribute="trailing" constant="16" id="zTp-vz-B4A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CalculatorTDD" id="zC4-aW-prv"/>
+                    <connections>
+                        <outlet property="dividendTextField" destination="xVH-D2-FbD" id="f9Q-ND-IvU"/>
+                        <outlet property="dividerTextField" destination="jew-EU-SBv" id="oej-oe-9hh"/>
+                        <outlet property="resultLabel" destination="q6X-01-VK7" id="aI3-Nx-uuF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="-564"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="syd-Ao-dnK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JML-Ep-woe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DZw-JT-135">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8R2-zM-KxX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ7-hc-LaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>
